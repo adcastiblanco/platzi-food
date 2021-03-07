@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+@variants dark, hover {
+  .rotate-45 {
+    transform: rotate(45deg);
+  }
+}
+@responsive {
+  .zoom {
+    transform: scale(2);
+  }
+}
